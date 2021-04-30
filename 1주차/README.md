@@ -33,10 +33,16 @@
 - Case : next, error, completed 
 
     <img width="400" alt="스크린샷 2021-04-27 오후 4 00 55" src="https://user-images.githubusercontent.com/70695311/116199208-d31d7c00-a771-11eb-9e21-5e3ac98df20e.png">
+    
+### Observerable ? Observer ? 
 
-
-<pre>
-<code>
+- Observable은 관찰 가능한 상태를 유지하면 Event를 전달해요.
+- 해당 Event를 Observer에게 전달하고 Observer에서 처리합니다.
+- Subscribe : 구독하다 , Observer : 구독자
+- observable는 이벤트를 방출하고, Observer는 이를 구독해서 이벤트를 처리하는 것이다.
+- observable.subscribe를 하면 내부에서 생성되는 observer에 대한 subscription을 만든다. => self.asObservable().subscribe(observer) 
+    
+```swift
 
 let one = 1
 let two = 2
@@ -66,9 +72,8 @@ Observable<String>.create { o in
    ).disposed(by: disposeBag)
    
    //onCompete, onError, dispose 부분을 제거하면 memory leak
-   
-</code>
-</pre>
+
+```
 
 ## Disoposable
 
@@ -78,8 +83,7 @@ Observable<String>.create { o in
 - 작업이 끝난 뒤에도, 작업 도중에도 처분이 가능하다. 
 - memory leak 발생 문제 해결해준다.
 
-<pre>
-<code>
+```swift
 
 // MARK: - Subscribing
 
@@ -95,8 +99,7 @@ _ = observable5.subscribe(onNext: { i in
         } onDisposed: { print("dispose")
         }.disposed(by: disposeBag)
 
-</code>
-</pre>
+```
 
 RxSwift 는 Rx API를 구현한 것이기 때문에 Cocoa, UIKit에 대해선 알지 못한다.
 이를 사용하기 위해선 RXCocoa를 이용하자!
