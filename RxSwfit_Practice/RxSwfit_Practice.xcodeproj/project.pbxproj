@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F650B6A266A0543003A51B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F650B69266A0543003A51B3 /* User.swift */; };
+		4F650B6E266A08CD003A51B3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F650B6D266A08CD003A51B3 /* Home.storyboard */; };
+		4F650B70266A08D7003A51B3 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F650B6F266A08D7003A51B3 /* MyProfile.storyboard */; };
+		4F650B75266A0B3F003A51B3 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F650B74266A0B3F003A51B3 /* HomeCoordinator.swift */; };
+		4F650B77266A0B4B003A51B3 /* MyProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F650B76266A0B4B003A51B3 /* MyProfileCoordinator.swift */; };
+		4F650B79266A0B57003A51B3 /* SignCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F650B78266A0B57003A51B3 /* SignCoordinator.swift */; };
+		4F650B7B266A10C7003A51B3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F650B7A266A10C7003A51B3 /* Coordinator.swift */; };
 		4F6BDE4C266788F700E8B1D9 /* mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BDE4B266788F700E8B1D9 /* mainVC.swift */; };
 		4F72A02A2661022D00217472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72A0292661022D00217472 /* AppDelegate.swift */; };
 		4F72A02C2661022D00217472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72A02B2661022D00217472 /* SceneDelegate.swift */; };
@@ -15,11 +22,17 @@
 		4F72A0362661023100217472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F72A0342661023100217472 /* LaunchScreen.storyboard */; };
 		4F72A03E2661033900217472 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72A03D2661033900217472 /* LoginVC.swift */; };
 		4F72A0412661085400217472 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72A0402661085400217472 /* LoginViewModel.swift */; };
-		4F72A0452661092C00217472 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72A0442661092C00217472 /* LoginModel.swift */; };
 		CD1F455AE7091BEBA0ABA811 /* Pods_RxSwfit_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F920920531CEABC34EFAEF /* Pods_RxSwfit_Practice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F650B69266A0543003A51B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../../User.swift; sourceTree = "<group>"; };
+		4F650B6D266A08CD003A51B3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4F650B6F266A08D7003A51B3 /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
+		4F650B74266A0B3F003A51B3 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		4F650B76266A0B4B003A51B3 /* MyProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCoordinator.swift; sourceTree = "<group>"; };
+		4F650B78266A0B57003A51B3 /* SignCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCoordinator.swift; sourceTree = "<group>"; };
+		4F650B7A266A10C7003A51B3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4F6BDE4B266788F700E8B1D9 /* mainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainVC.swift; sourceTree = "<group>"; };
 		4F72A0262661022D00217472 /* RxSwfit_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwfit_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F72A0292661022D00217472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +43,6 @@
 		4F72A0372661023100217472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F72A03D2661033900217472 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4F72A0402661085400217472 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		4F72A0442661092C00217472 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		95899D0806C5322B307FA0D9 /* Pods-RxSwfit_Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwfit_Practice.debug.xcconfig"; path = "Target Support Files/Pods-RxSwfit_Practice/Pods-RxSwfit_Practice.debug.xcconfig"; sourceTree = "<group>"; };
 		99F920920531CEABC34EFAEF /* Pods_RxSwfit_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwfit_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20FB1D682B8C1E9D75123FE /* Pods-RxSwfit_Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwfit_Practice.release.xcconfig"; path = "Target Support Files/Pods-RxSwfit_Practice/Pods-RxSwfit_Practice.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +69,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4F650B73266A0B1C003A51B3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4F650B74266A0B3F003A51B3 /* HomeCoordinator.swift */,
+				4F650B76266A0B4B003A51B3 /* MyProfileCoordinator.swift */,
+				4F650B78266A0B57003A51B3 /* SignCoordinator.swift */,
+				4F650B7A266A10C7003A51B3 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		4F72A01D2661022D00217472 = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				4F72A03F2661069D00217472 /* Resource */,
+				4F650B73266A0B1C003A51B3 /* Coordinator */,
 				4F72A03D2661033900217472 /* LoginVC.swift */,
 				4F72A0402661085400217472 /* LoginViewModel.swift */,
-				4F72A0442661092C00217472 /* LoginModel.swift */,
 				4F6BDE4B266788F700E8B1D9 /* mainVC.swift */,
 				4F72A02F2661022D00217472 /* Main.storyboard */,
+				4F650B6D266A08CD003A51B3 /* Home.storyboard */,
+				4F650B6F266A08D7003A51B3 /* MyProfile.storyboard */,
 				4F72A0342661023100217472 /* LaunchScreen.storyboard */,
 				4F72A0372661023100217472 /* Info.plist */,
 			);
@@ -96,6 +121,7 @@
 				4F72A0322661023100217472 /* Assets.xcassets */,
 				4F72A02B2661022D00217472 /* SceneDelegate.swift */,
 				4F72A0292661022D00217472 /* AppDelegate.swift */,
+				4F650B69266A0543003A51B3 /* User.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -170,6 +196,8 @@
 				4F72A0362661023100217472 /* LaunchScreen.storyboard in Resources */,
 				4F72A0332661023100217472 /* Assets.xcassets in Resources */,
 				4F72A0312661022D00217472 /* Main.storyboard in Resources */,
+				4F650B70266A08D7003A51B3 /* MyProfile.storyboard in Resources */,
+				4F650B6E266A08CD003A51B3 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +252,14 @@
 			files = (
 				4F6BDE4C266788F700E8B1D9 /* mainVC.swift in Sources */,
 				4F72A02A2661022D00217472 /* AppDelegate.swift in Sources */,
-				4F72A0452661092C00217472 /* LoginModel.swift in Sources */,
+				4F650B6A266A0543003A51B3 /* User.swift in Sources */,
 				4F72A0412661085400217472 /* LoginViewModel.swift in Sources */,
 				4F72A02C2661022D00217472 /* SceneDelegate.swift in Sources */,
+				4F650B77266A0B4B003A51B3 /* MyProfileCoordinator.swift in Sources */,
+				4F650B7B266A10C7003A51B3 /* Coordinator.swift in Sources */,
+				4F650B75266A0B3F003A51B3 /* HomeCoordinator.swift in Sources */,
 				4F72A03E2661033900217472 /* LoginVC.swift in Sources */,
+				4F650B79266A0B57003A51B3 /* SignCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

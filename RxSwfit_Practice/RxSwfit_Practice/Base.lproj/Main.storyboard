@@ -103,33 +103,25 @@
             </objects>
             <point key="canvasLocation" x="990" y="76"/>
         </scene>
-        <!--MainVC-->
-        <scene sceneID="Sef-e7-IDw">
+        <!--Home-->
+        <scene sceneID="G5r-Ct-dbk">
             <objects>
-                <viewController storyboardIdentifier="mainVC" id="1rq-Ef-6C5" customClass="mainVC" customModule="RxSwfit_Practice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="peF-kk-rAd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avU-RO-W3e">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="w1F-Za-Tve"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="avU-RO-W3e" firstAttribute="centerX" secondItem="peF-kk-rAd" secondAttribute="centerX" id="Q6W-5x-EM1"/>
-                            <constraint firstItem="avU-RO-W3e" firstAttribute="centerY" secondItem="peF-kk-rAd" secondAttribute="centerY" id="hKg-Vd-NxP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="h72-tF-cQw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xt3-cM-F2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Home" id="9Vh-Kk-aEw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="q5q-HF-H2K"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4r-r2-RiS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="76"/>
+            <point key="canvasLocation" x="2656" y="-58"/>
+        </scene>
+        <!--MyProfile-->
+        <scene sceneID="MM8-rf-QB4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyProfile" id="roj-Ge-agQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="JNb-t7-llK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7z-uZ-ou3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2655" y="196"/>
         </scene>
     </scenes>
     <resources>

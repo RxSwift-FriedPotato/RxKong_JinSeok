@@ -9,15 +9,17 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController{
+    var coordinator : SignCoordinator?
     
     @IBOutlet weak var id_TextField: UITextField!
     @IBOutlet weak var pwd_TextField: UITextField!
     @IBOutlet weak var signinBtn: UIButton!
     @IBOutlet weak var signupBtn: UIButton!
-    
+
     let viewModel = LoginViewModel()
     let disposeBag = DisposeBag()
+
     
     static func instance() -> LoginVC {
         return LoginVC(nibName: nil, bundle: nil)
@@ -57,12 +59,17 @@ class LoginVC: UIViewController {
     }
     
     private func showError(message : String){
-        print(message)
+        let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+                        alert.addAction(.init(title: "확인", style: .cancel))
+        self.present(alert, animated: true, completion: nil)
     }
+    
     private func goToMain() {
-        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
-            guard let main = storyboard?.instantiateViewController(withIdentifier: "mainVC") as? mainVC else { return }
-            sceneDelegate.window?.rootViewController = main
-        }
+        coordinator = SignCoordinator.init(nav: navigationController!)
+        coordinator?.move()
+//        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+//            guard let main = storyboard?.instantiateViewController(withIdentifier: "mainVC") as? mainVC else { return }
+//            sceneDelegate.window?.rootViewController = main
+//        }
     }
 }
